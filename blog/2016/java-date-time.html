@@ -1,0 +1,139 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/page-full-width.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="Read - Responsive HTML5 Template">
+    <meta name="keywords" content="read, blog, html5, portfolio">
+    <meta name="author" content="Pixelwars">
+
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Date Time handling in Java</title>
+    <!-- InstanceEndEditable -->
+
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/logo-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/logo-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/logo-72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/logo-57.png">
+
+    <!-- FONTS -->
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 9]>
+        <script src="../../js/html5shiv.js"></script>
+        <script src="../../js/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="print" href="../../css/print.css">
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../js/google-code-prettify/prettify.css">
+    <link rel="stylesheet" type="text/css" href="../../css/uniform.default.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/flexslider.css">
+
+    <!-- SCRIPTS -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+
+
+    <!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
+
+
+</head>
+
+
+<body>
+	<div id="page" class="hfeed site">
+          <!-- .site-header -->
+          <header class="site-header wrapper" role="banner">
+
+            <!-- .row -->
+            <div class="row">
+
+              <!-- .site-title -->
+              <hgroup>
+                <h1 class="site-title"> <a href="index.html" title="Read" rel="home">Read<!--<img src="images/logo.png" alt="logo">--></a> </h1>
+                <h2 class="site-description">. . . on dealing with software architecture.</h2>
+              </hgroup>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+    <ul>
+      <li class="current-menu-item"><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+</nav>            </div>
+          </header>
+    </div>
+    <!-- #main -->
+    <section id="main" class="middle wrapper">
+        <div class="row row-fluid">
+            <!-- #primary -->
+            <div id="primary" class="site-content">
+
+                <!-- #content -->
+                <div id="content" role="main">
+                    <!-- InstanceBeginEditable name="Middle-Content" -->
+                      <!-- .blog-single -->
+                      <div class="blog-single readable-content">
+                        <!-- .hentry -->
+                        <article class="post type-post format-standard hentry">
+                          <!-- .entry-header -->
+                          <header class="entry-header">
+                            <h1 class="entry-title">Date Time handling in Java</h1>
+                          </header>
+
+                          <div class="entry-meta">
+                            Posted on 08 April 2016
+                          </div>
+                          <p>The first thing I learned from working with dates is that it is really hard.<br/>In the beginning I would resort in calculations like 86400 * $days and calculate a new date by hand. Maybe it sounds familiar but I soon discovered that it introduces more problems than it solves. Calculating a leap year for example is difficult.</p><p>Since JVM 1.8 there is an easy API that supports calculating with dates and times. When you don't need timezones you can use the LocalDate, LocalTime </p><h2>LocalDate</h2>
+<pre class="prettyprint">
+LocalDate date = LocalDate.now();
+LocalDate newDate = date.plusYears(10);
+</pre><p>LocalDate is an immutable object, this means that an instance of LocalDate cannot be changed. Every plus/minus method returns a new instance.<br/>The major advantage is that every instance is now thread safe without any difficult locking.</p><h2>LocalTime</h2><p>Working with the times works in the same way as the dates. </p>
+<pre class="prettyprint">
+LocalTime lt = LocalTime.now();
+lt.isBefore(LocalTime.NOON);
+</pre>
+<pre class="prettyprint">
+LocalTime lt = LocalTime.now();
+LocalTime lt2 = lt.plusHours(12);
+</pre>
+
+                        </article>
+                      </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    </div>
+    <!-- #PAGE -->
+
+    <!-- SCRIPTS -->
+    <script src="../../js/detectmobilebrowser.js"></script>
+    <script src="../../js/modernizr.js"></script>
+    <script src="../../js/jquery.imagesloaded.min.js"></script>
+    <script src="../../js/jquery.fitvids.js"></script>
+    <script src="../../js/google-code-prettify/prettify.js"></script>
+    <script src="../../js/jquery.uniform.min.js"></script>
+
+    <!-- InstanceBeginEditable name="body-end" -->
+    <script src="../../js/jquery.validate.min.js"></script>
+	<!-- InstanceEndEditable -->
+
+    <script src="../../js/main.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://leonrenkema.nl/about.html</loc>
+        <lastmod>2016-04-01</lastmod>
+    </url>
+    <url>
+        <loc>https://leonrenkema.nl/contact.html</loc>
+        <lastmod>2016-04-01</lastmod>
+    </url>
+    <url>
+        <loc>https://leonrenkema.nl/blog/2016/legacy.html</loc>
+        <lastmod>2016-04-08</lastmod>
+    </url>
+    <url>
+        <loc>https://leonrenkema.nl/blog/2015/operator-overloading.html</loc>
+        <lastmod>2015-03-26</lastmod>
+    </url>
+    <url>
+        <loc>https://leonrenkema.nl/blog/2013/fourth-post.html</loc>
+        <lastmod>2013-10-17</lastmod>
+    </url>
+    <url>
+        <loc>https://leonrenkema.nl/blog/2013/third-post.html</loc>
+        <lastmod>2013-09-26</lastmod>
+    </url>
+    <url>
+        <loc>https://leonrenkema.nl/blog/2013/first-post.html</loc>
+        <lastmod>2013-07-24</lastmod>
+    </url>
+</urlset>
