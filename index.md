@@ -1,3 +1,7 @@
+---
+title: Test with syntax highlighting
+---
+
 # Test
 
 This is a *test*
