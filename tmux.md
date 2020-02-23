@@ -1,8 +1,12 @@
 
 # Tmux cheatsheet
 
-Ctrl-b Up
-Ctrl-b Down
+- tmux attach
+- tmux new-session
+
+* Ctrl-b Up
+* Ctrl-b Down
+
 
 
 ```yaml
