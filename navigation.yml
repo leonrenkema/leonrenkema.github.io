@@ -1,0 +1,8 @@
+# Site navigation links
+- title: Home
+  url: /
+
+- title: Kubernetes
+  url: /presentations/
+
+
