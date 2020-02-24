@@ -30,3 +30,15 @@ env:
 ```shell
 kubectl create configmap mariadb-my.cnf --from-file=my.cnf
 ```
+
+```yaml
+containers:
+  - name: database
+    volumeMounts:
+    - name: mariadb-configmap
+      mountPath: /etc/mysql
+   volumes:
+   - name: mariadb-configmap
+      configMap:
+        name: mariadb-my.cnf
+```
