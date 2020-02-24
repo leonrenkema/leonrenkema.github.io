@@ -27,8 +27,16 @@ env:
 
 ## Create a configmap
 
+Create a file with the name `my.cnf` and create a configmap with the following command
+
 ```shell
 kubectl create configmap mariadb-my.cnf --from-file=my.cnf
+```
+
+The configmap can be edited with the following command
+
+```shell
+kubectl edit configmap mariadb-my.cnf
 ```
 
 ```yaml
