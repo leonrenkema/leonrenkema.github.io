@@ -1,5 +1,5 @@
 Some collected notes about programming, kubernetes, and some other topics that are of interest for me.
 
-[Kubernetes tips](kubernetes-1.md)
+[Kubernetes](devops/kubernetes/index.md)
 
 
