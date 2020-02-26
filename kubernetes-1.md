@@ -1,7 +1,3 @@
----
-title: Kubernetes quick answers
----
-
 
 
 ## Create a plain password
