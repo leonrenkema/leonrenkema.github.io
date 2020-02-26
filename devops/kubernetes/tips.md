@@ -24,7 +24,7 @@ env:
 
 ## Create a configmap
 
-Create a file with the name `my.cnf` and create a configmap with the following command
+Create a file with the name `my.cnf` and create a configmap with the following command.
 
 ```shell
 kubectl create configmap mariadb-my.cnf --from-file=my.cnf
