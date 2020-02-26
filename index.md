@@ -1,22 +1,4 @@
----
-layout: default
-title: Test with syntax highlighting
----
-
-# Test
-
-This is a *test*
-
-```java
-import System;
-
-@RestController
-class Hello extends Base {
-    @GetMapping
-    public void getter() {
-    }
-}
-```
+Some collected notes about programming, kubernetes, and some other topics that are of interest for me.
 
 [Kubernetes tips](kubernetes-1.md)
 
