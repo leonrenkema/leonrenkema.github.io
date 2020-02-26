@@ -1,10 +1,11 @@
 ---
+layout: default
 title: Test with syntax highlighting
 ---
 
 # Test
 
-This is a *test* 
+This is a *test*
 
 ```java
 import System;

@@ -3,12 +3,13 @@ title: Kubernetes quick answers
 ---
 
 
+
 ## Create a plain password
 
 Create a secret and be able to update in a easy way
 
 ```shell
-kubectl create secret generic mariadb 
+kubectl create secret generic mariadb
 	--from-literal=root-password={password}
 	--dry-run -o yaml | kubectl apply -f -
 ```
