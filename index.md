@@ -17,3 +17,7 @@ class Hello extends Base {
     }
 }
 ```
+
+[Kubernetes tips](kubernetes-1)
+
+
