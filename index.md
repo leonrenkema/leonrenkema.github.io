@@ -18,6 +18,6 @@ class Hello extends Base {
 }
 ```
 
-[Kubernetes tips](kubernetes-1)
+[Kubernetes tips](kubernetes-1.md)
 
 
