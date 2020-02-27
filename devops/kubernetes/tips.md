@@ -55,3 +55,10 @@ containers:
       configMap:
         name: mariadb-my.cnf
 ```
+## Start random pod
+
+Start any image and obtain a shell
+
+```shell
+ kubectl run -i --tty busybox --image=busybox --restart=Never -- sh  
+```
