@@ -1,6 +1,6 @@
 
 
-## Create a plain password
+## Create secret from a plain password
 
 Create a secret and be able to update in a easy way
 
@@ -20,6 +20,14 @@ env:
         name: mariadb
         key: root-password
 
+```
+
+## Create secret from a TLS certificate
+
+```shell
+kubectl create secret tls tls-name-ingress
+  --cert=tls.crt
+  --key=tls.key
 ```
 
 ## Create a configmap
