@@ -25,9 +25,27 @@ env:
 ## Create secret from a TLS certificate
 
 ```shell
-kubectl create secret tls tls-name-ingress
-  --cert=tls.crt
-  --key=tls.key
+kubectl create secret tls tls-name-ingress --cert=tls.crt --key=tls.key
+```
+
+## Ingress
+
+Example of an simple ingress configuration
+
+```yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: frontend
+spec:
+  rules:
+  - host: hostname.domain.nl
+    http:
+      paths:
+      - backend:
+          serviceName: service
+          servicePort: 8443
+        path: /
 ```
 
 ## Create a configmap
@@ -54,11 +72,4 @@ containers:
    - name: mariadb-configmap
       configMap:
         name: mariadb-my.cnf
-```
-## Start random pod
-
-Start any image and obtain a shell
-
-```shell
- kubectl run -i --tty busybox --image=busybox --restart=Never -- sh  
 ```
