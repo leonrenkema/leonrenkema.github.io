@@ -2,4 +2,5 @@
 
 All kubernetes (k8s) related
 
-[Tips](tips.md)
+* [Tips](tips.md)
+* [Ingress](ingress.md)
