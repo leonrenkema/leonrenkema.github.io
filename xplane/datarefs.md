@@ -4,10 +4,11 @@ Xplane can send DataRef frames with information about the current values in the 
 
 The format is really simple and consists of 509 bytes of data
 
-^ Byte[]      ^ Content       ^ Description          ^
-| 0-4    | DREF+     | Header indicating this is a DataRef        |
-| 5-9    | float     | 4 bytes of the floating point number  |
-| 10-509    | string     | A string with the name of the DataRef |
+| Byte[]      | Content       | Description |
+|-------------|---------------|-------------|
+| 0-4         | DREF+         | Header indicating this is a DataRef |
+| 5-9         | float         | 4 bytes of the floating point number |
+| 10-509      | string        | A string with the name of the DataRef |
 
 
 When dumping the data with tcpdump the structure can be explored. UDP frames are really simple, the first 28 bytes are the source Port, destination Port, the length and the checksum. The rest of the data is the DataRef itself.
