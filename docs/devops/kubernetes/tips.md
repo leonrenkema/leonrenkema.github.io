@@ -28,6 +28,29 @@ env:
 kubectl create secret tls tls-name-ingress --cert=tls.crt --key=tls.key
 ```
 
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+  - name: mypod
+    image: redis
+    volumeMounts:
+    - name: foo
+      mountPath: "/etc/foo"
+      readOnly: true
+  volumes:
+  - name: foo
+    secret:
+      secretName: mysecret
+      items:
+      - key: username
+        path: my-group/my-username
+```
+
+
 ## Ingress
 
 Example of an simple ingress configuration
